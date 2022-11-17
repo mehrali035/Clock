@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(60deg, rgb(58, 4, 13) 30%, rgb(36, 34, 36) 70%);
+}
+
+.clock {
+    width: 25rem;
+    height: 25rem;
+    background: black;
+    border-radius: 50%;
+    border: solid white 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 5px black;
+}
+
+svg {
+
+    height: 100%;
+    width: 100%;
+}
+
+#hourhand {
+    height: 6rem;
+    width: 0.4rem;
+    background: rgb(47, 255, 193);
+}
+
+#minhand {
+    height: 7rem;
+    width: 0.3rem;
+    background: red;
+
+}
+
+#sechand {
+    height: 7rem;
+    width: 0.1rem;
+    background: rgb(68, 47, 255);
+}
+
+#hourhand {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 92px;
+    z-index: -1;
+    border-radius: 1rem;
+    transform-origin: bottom;
+}
+
+#minhand {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 74px;
+    z-index: -1;
+    border-radius: 1rem;
+    transform-origin: bottom;
+}
+
+#sechand {
+    position: absolute;
+    margin-left: 183px;
+    margin-top: 75px;
+    z-index: -1;
+    border-radius: 1rem;
+    transform-origin: bottom;
+}
+
+path {
+    fill: rgb(251, 255, 0) !important;
+}
